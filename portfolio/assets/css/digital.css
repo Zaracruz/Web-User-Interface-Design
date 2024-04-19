@@ -6,57 +6,36 @@ body{
       background-color: rgb(255, 253, 253);
   }
     
-    header {
+header {
       background-color: rgb(186, 184, 184);
       padding: 10px;
       text-align: center;
       color: white;
       text-shadow: 2px 2px 5px black;
     }
-
-    * {
-        box-sizing: border-box;
-      }
-      
-      .column {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-
-      }
-      
-      /* Clearfix (clear floats) */
-      .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-
-      /*responsive images*/
-      .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .column {
-    flex: calc(100% / 3 - 10px);
-    padding: 5px;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
+    
+.flex-container {
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap onto the next line */
     }
-  }
 
 
-    img {
+.flex-child {
+        flex: 0 0 33.333%; /* Grow to fill, shrink if needed, base width of 200px */
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box; /* Includes padding and border in the element's total width */
+    }
+
+   
+ @media (max-width: 600px){
+        .flex-child {
+            flex: 0 0 100%;
+        }
+    }
+
+
+img {
       width: 100%; /* Make images responsive */
       max-width: 500px; /* maximum width for images */
       height: auto; /* Maintain aspect ratio */
@@ -66,12 +45,12 @@ body{
   }
 
   
-  .topnav {
+.topnav {
     overflow: hidden;
     background-color: #828080;
   }
   
-  .topnav a {
+.topnav a {
     float: left;
     color: #888787;
     text-align: center;
@@ -80,18 +59,18 @@ body{
     font-size: 14px;
   }
   
-  .topnav a:hover {
+.topnav a:hover {
     background-color: #ddd;
     color: rgb(195, 193, 193);
   }
   
-  .topnav a.active {
+.topnav a.active {
     background-color: #04AA6D;
     color: white;
   }
   
   /* side bar nav */
-  .sidenav {
+.sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -104,7 +83,7 @@ body{
     padding-top: 60px;
   }
   
-  .sidenav a {
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -114,11 +93,12 @@ body{
     text-shadow: 2px 2px 5px #363637;
   }
   
-  .sidenav a:hover {
+
+.sidenav a:hover {
     color: #fdf8f8;
   }
   
-  .sidenav .closebtn {
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -126,6 +106,7 @@ body{
     margin-left: 50px;
   }
   
+ 
   #main {
     transition: margin-left .5s;
     padding: 16px;
@@ -140,7 +121,7 @@ body{
   }
 
   
-  footer {
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
