@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Information Page</title>
+</head>
+<body>
+
+    <link href ="assets/css/information.css" rel="stylesheet">
+
+
+    <header><h1>About Me</h1></header>
+   
+    <div class="topnav">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Welcome</a>
+            <a href="digital.html">Digital Work</a>
+            <a href="pencil.html">Pencil Work</a>
+            <a href="paintings.html">Paintings</a>
+          </div>
+          
+          <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Explore</span>
+          </div> 
+    </div>
+     
+
+
+    <div class="container clearfix">
+
+        <!-- Main content area -->
+        <div class="main-content">
+            <h2>A Bit About Me </h2>
+            <p>My name is Zara Cruise, I am currently a student studying Interactive Digital Art and design<a>
+                at Setu Carlow. I have a passion for Art and learning new skills. During my first year of the IDAD</a>
+                course I learned a lot about coding and developed skills in games development, but progressing into second<a>
+                year I began to learn more about web development, and absolutely love it.</a> My choice of course allows me to
+                be creative and have fun. I've taken my love for art and made it digital! 
+
+                
+                <p>My contacts are available below, or there is a contact form below if you wish do use that for any comments,<a>
+                feedback or questions you may have.</a>
+          
+
+
+                  <!--Contact Form-->
+   <div class="container">
+    <form id="myForm">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Continent</label>
+        </div>
+        <div class="col-75">
+          <select id="continent" name="continent">
+            <option value="oceanic">Oceanic</option>
+            <option value="north america">North America</option>
+            <option value="south america">South America</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="africa">Africa</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit" id="submitButton">
+      </div>
+    </form>
+  </div>
+
+        </div>
+
+                  <!-- Sidebar area -->
+                  <div class="sidebar">
+                    <img src="assets/img/potrait.jpg">
+        
+           <dl>
+            <dd><h2>Contact Information</h2></dd>
+            <dd>Email: Zaracruisebel@gmail.com</dd>
+            <dd>Mobile: 0852535043</dd>
+            <dd>Socials:......</dd>
+           </dl>
+                  
+
+
+
+   <script src ="assets/js/information.js"></script>
+   
+</body>
+</html>
