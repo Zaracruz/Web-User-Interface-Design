@@ -1,5 +1,5 @@
 body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:"Audiowide", sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
@@ -33,6 +33,7 @@ header {
             flex: 0 0 100%;
         }
     }
+
 
 
 img {
